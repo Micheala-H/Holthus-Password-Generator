@@ -24,19 +24,23 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword(){
   var options = "";
   var capsQ = prompt("Capital Letters? yes or no");
-    if(capsQ=== "yes"){
+  var capsQlower = capsQ.toLowerCase()
+    if(capsQlower === "yes"){
     options += caps;
   }
   var lowerQ = prompt("Lowercase Letters? yes or no");
-    if(lowerQ === "yes") {
+  var lowerQlower = lowerQ.toLowerCase()
+    if(lowerQlower === "yes") {
       options += lower;
     }
   var numbQ = prompt("Numbers? Yes or No");
-    if(numbQ === "yes"){
+  var numbQlower = numbQ.toLowerCase()
+    if(numbQlower === "yes"){
       options += numb
     }
   var specialQ = prompt("Special characters? Yes or No");
-    if(specialQ === "yes"){
+  var specialQlower = specialQ.toLowerCase()
+    if(specialQlower === "yes"){
       options += special
     }
   var passlength = prompt("How many characters?");
